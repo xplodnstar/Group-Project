@@ -75,7 +75,7 @@ Please ask your waiter or waitress for assistance.
 ## Resources
 
 * [Mockups](http://pc-restaurant.surge.sh/)
-* [Custom Restaurant API](https://json-data.herokuapp.com/restaurant)
+* [Custom Restaurant API](https://obscure-tundra-54269.herokuapp.com/)
 * [The Noun Project](http://thenounproject.com/)
 * [Icon Fonts](http://weloveiconfonts.com/)
 * [Creative Commons Images](https://www.flickr.com/creativecommons/)
