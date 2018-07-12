@@ -1,6 +1,6 @@
 |Group 1|Group 2|
 |-------|-------|
-|Marcus |Austin |
+|Mason  |Austin |
 |Serena |Victor |
 |       |Michael|
 
