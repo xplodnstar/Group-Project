@@ -1,3 +1,9 @@
+|Group 1|Group 2|
+|-------|-------|
+|Marcus |Austin |
+|Serena |Victor |
+|       |Michael|
+
 # Group Project
 
 
