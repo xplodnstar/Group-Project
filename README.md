@@ -1,8 +1,8 @@
-|Group 1|Group 2|
-|-------|-------|
-|Mason  |Austin |
-|Serena |Victor |
-|       |Michael|
+|Group 1|Group 2|Group 3|
+|-------|-------|-------|
+|Connor |Garrett|Eddie  |
+|Teya   |Carston|Sucely |
+|       |Kevin  |       |
 
 # Group Project
 
