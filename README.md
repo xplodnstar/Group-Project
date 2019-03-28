@@ -1,4 +1,7 @@
-
+| Team1     | Team2     |  Team3    |  Team4    |  Team5    |  Team6    |
+| ----------| ----------|-----------|-----------|-----------|-----------|
+| Nova      | Sean      |Cruz       |Rendon     |Adam       |Austin     |
+| Tissiana  | Tyler     |Cesar      |Raul       |Beovanni   |Stephanie  |
 
 # Group Project
 
