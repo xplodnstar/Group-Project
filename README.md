@@ -1,8 +1,4 @@
-|Group 1|Group 2|Group 3|
-|-------|-------|-------|
-|Connor |Garrett|Eddie  |
-|Teya   |Karsten|Sucely |
-|       |Kevin  |       |
+
 
 # Group Project
 
