@@ -26,7 +26,7 @@ body {
     margin: 10px 100px;
 }
 
-.logo h2, h3 {
+h2, h3 {
     text-align: center;
     color: rgb(169, 45, 38)
 }
@@ -80,11 +80,6 @@ body {
     left: 0;
 }
 
-.specials h2 {
-    text-align: center;
-    color: rgb(169, 45, 38)
-}
-
 #bratwurst {
     width: 450px;
     margin: 0 25px;
@@ -95,13 +90,16 @@ body {
     margin: 0 25px;
 }
 
-.specials p {
+p {
     margin: 25px;
     font-size: 18px;
 }
+span {
+    text-align: center;
+}
 
-.specials hr {
-    width: 475px;
+hr {
+    width: 90%;
     height: 5px;;
     background-color: rgb(169, 45, 38);
     border: none;
