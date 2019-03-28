@@ -1,7 +1,6 @@
-| Name      | Sections                                       |
-| ----------| ----------|------------|-----------|-----------|
-| Nova      | logo      | specials   | news      | map       |
-| Tissiana  | social    | inner pics | food pics | tabs      |
+
+ Nova: logo, specials, news, map       
+ Tissiana: social, inner pics, ood pics, tabs 
 
 # Group Project
 
