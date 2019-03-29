@@ -9,7 +9,6 @@ body {
 }
 .pageTop {
     position: relative;
-
 }
 
 .logo {
@@ -33,16 +32,16 @@ body {
 
 .social {
     width: 500px;
-    height: 200px;
-    border: solid 1px red;
+    height: 300px;
+    border: solid 1px transparent;
     position: absolute;
     top: 500px;
     left: 0;
+    margin-left:20px;
 }
 
-
 .innerPic {
-    width: 1150px;
+    width: 1000px;
     height: 650px;
     position: absolute;
     left: 500px;
@@ -56,22 +55,56 @@ body {
 
 .pageBody {
     position: relative;
+    top: 600px;
+    left: 0;
 }
 
-.tabs {
-    width: 1000px;
-    height: 1200px;
-    border: solid 1px red;
-    position: absolute;
+#accordion {
+    position:absolute;
     top: 0;
-    left: 500px;
-    margin-left:80px;
+    left:500;
+    margin-top:200px;
+    margin-left:600px;
 }
+
+ul {
+    list-style:none;
+    padding:0;
+    width:1000px;
+    color:black;
+    font-size:20px;
+    }
+    
+    #accordion li h4 {
+    background:rgb(255,255,255,.2);
+    color:white;
+    padding:10px;
+    margin:0;
+    border:1px solid transparent;
+    font-family: Helvetica;
+    font-size:30px;
+    height:50px;
+    width:1000px;
+    }
+    
+    #accordion li .content {
+    padding: 0 10px;
+    }
+    
+    .content{
+        height:0;
+        overflow:auto;
+        transition: height 1s;
+    }
+    
+    .content.show {
+        height:500px;
+    }
 
 .specials {
     width: 500px;
     height: 1200px;
-    border: solid 1px red;
+    border: solid 1px transparent;
     position: absolute;
     top: 600px;
     left: 0;
@@ -108,7 +141,7 @@ body {
 .news {
     width: 500px;
     height: 600px;
-    border: solid 1px red;
+    border: solid 1px transparent;
     position: absolute;
     top: 1200px;
     left: 500px;
@@ -117,27 +150,22 @@ body {
 .map {
     width: 500px;
     height: 600px;
-    border: solid 1px red;
+    border: solid 1px transparent;
     position: absolute;
     top: 1200px;
     left: 1000px;
 }
 
-* {box-sizing:border-box}
 
 .slideshow-container {
   position: absolute;
-  margin-top: 800px;
-  margin-left:10px;
-  border:30px solid rgb(220,220,220,.5);
+  margin-top: 200px;
+  border:20px solid rgb(255,255,255,.2);
+  margin-left:0px;
 }
 
 .mySlides {
   display: none;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 .fade {
