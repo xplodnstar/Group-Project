@@ -1,7 +1,6 @@
-| Team1     | Team2     |  Team3    |  Team4    |  Team5    |  Team6    |
-| ----------| ----------|-----------|-----------|-----------|-----------|
-| Nova      | Sean      |Cruz       |Rendon     |Adam       |Austin     |
-| Tissiana  | Tyler     |Cesar      |Raul       |Beovanni   |Stephanie  |
+
+ Nova: logo, specials, news, map       
+ Tissiana: social, inner pics, ood pics, tabs 
 
 # Group Project
 

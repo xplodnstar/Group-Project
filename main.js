@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
 
@@ -17,12 +18,18 @@ function initMap() {
 
 
 
-/* <div class="mapouter">
-<div class="gmap_canvas">
-<iframe width="400" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=mars%20ave%20las%20vegas%2Cnv&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung:
-<a href="https://www.pureblack.de">Pure Black GmbH</a>
-</div>
-<style>.mapouter{position:relative;text-align:right;height:200px;width:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style>
-</div> */
+var slideIndex = 0;
+showSlides();
 
-// https://www.google.com/mars/#lat=25.222408&lon=665.022765&zoom=5&map=visible
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 1000); // Change image every 1 second
+}
+
