@@ -47,6 +47,11 @@ body {
     position: absolute;
     top: 0;
     left: 500px;
+    background-image: url("assets/Tavern.jpeg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    
 }
 
 .pageBody {
