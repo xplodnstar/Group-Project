@@ -9,8 +9,6 @@ body {
 }
 .pageTop {
     position: relative;
-    top: 0;
-    left: 0;
 }
 
 .logo {
@@ -39,11 +37,12 @@ h4 {
 
 .social {
     width: 500px;
-    height: 200px;
-    border: solid 1px red;
+    height: 300px;
+    border: solid 1px transparent;
     position: absolute;
     top: 400px;
     left: 0;
+    margin-left:20px;
 }
 
 .innerPic {
@@ -61,7 +60,52 @@ h4 {
 
 .pageBody {
     position: relative;
+    top: 600px;
+    left: 0;
 }
+
+
+#accordion {
+    position:absolute;
+    top: 0;
+    left:500;
+    margin-top:200px;
+    margin-left:600px;
+}
+
+ul {
+    list-style:none;
+    padding:0;
+    width:1000px;
+    color:black;
+    font-size:20px;
+    }
+    
+    #accordion li h4 {
+    background:rgb(255,255,255,.2);
+    color:white;
+    padding:10px;
+    margin:0;
+    border:1px solid transparent;
+    font-family: Helvetica;
+    font-size:30px;
+    height:50px;
+    width:1000px;
+    }
+    
+    #accordion li .content {
+    padding: 0 10px;
+    }
+    
+    .content{
+        height:0;
+        overflow:auto;
+        transition: height 1s;
+    }
+    
+    .content.show {
+        height:500px;
+    }
 
 .slideshow-container {
     width: 500px;
@@ -118,7 +162,7 @@ h4 {
 .specials {
     width: 500px;
     height: 1200px;
-    border: solid 1px red;
+    border: solid 1px transparent;
     position: absolute;
     top: 1200px;
     left: 0;
@@ -170,7 +214,7 @@ hr {
 .news {
     width: 500px;
     height: 600px;
-    border: solid 1px red;
+    border: solid 1px transparent;
     position: absolute;
     top: 1800px;
     left: 500px;
@@ -179,12 +223,11 @@ hr {
 .map {
     width: 500px;
     height: 600px;
-    border: solid 1px red;
+    border: solid 1px transparent;
     position: absolute;
     top: 1800px;
     left: 1000px;
 }
-
 
 #map {
     width: 400px;
@@ -199,6 +242,8 @@ hr {
     margin: auto;
     border: solid 2px  rgb(169, 45, 38);
 }
+
+
 
 
 

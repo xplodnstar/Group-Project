@@ -1,4 +1,5 @@
 
+
 $(document).ready(function () {
   // var trgt = $(this)
   // trgt.on('click', 'h2', function () {
@@ -71,7 +72,6 @@ $(document).ready(function () {
 
 
 
-
   var slideIndex = 0;
   showSlides();
 
@@ -80,10 +80,56 @@ $(document).ready(function () {
     var slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
+
     }
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 1000); // Change image every 1 second
+}
+
+
+function rudrSwitchTab(rudr_tab_id, rudr_tab_content) {
+    // first of all we get all tab content blocks (I think the best way to get them by class names)
+    var x = document.getElementsByClassName("tabcontent");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none'; // hide all tab content
+    }
+    document.getElementById(rudr_tab_content).style.display = 'block'; // display the content of the tab we need
+
+    // now we get all tab menu items by class names (use the next code only if you need to highlight current tab)
+    var x = document.getElementsByClassName("tabmenu");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].className = 'tabmenu';
+    }
+    document.getElementById(rudr_tab_id).className = 'tabmenu active';
+}
+
+$("#accordion").on("click", "h4", function () {
+    $(".content").removeClass('show')
+    var content = $(this).siblings(".content")
+    if (!content.hasClass('show')) {
+        content.addClass('show')
+    } else {
+        content.removeClass('show')
+    }
+})
+
+
+
+$("#menu").on("click", function () {
+    $(".content").removeClass("show")
+    var items = $.ajax({
+        method: "post",
+        url: "https://obscure-tundra-54269.herokuapp.com/bar-food"
+    }).done(function (items) {
+        console.log(items)
+    })
+})
+
     setTimeout(showSlides, 2000); // Change image every 2 seconds
   }
 
