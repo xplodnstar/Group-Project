@@ -5,7 +5,7 @@ body {
     width: 1500px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 /* background image to be added later */
-    background-color: darkgray;
+    background-color: grey;
 }
 .pageTop {
     position: relative;
@@ -36,35 +36,26 @@ body {
     height: 200px;
     border: solid 1px red;
     position: absolute;
-    top: 400px;
+    top: 500px;
     left: 0;
 }
 
+
 .innerPic {
-    width: 1000px;
-    height: 600px;
-    border: solid 1px red;
+    width: 1150px;
+    height: 650px;
     position: absolute;
-    top: 0;
     left: 500px;
     background-image: url("assets/Tavern.jpeg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    
+    margin-left:20px;
+    margin-top:50px;    
 }
 
 .pageBody {
     position: relative;
-}
-
-.foodPics {
-    width: 500px;
-    height: 600px;
-    border: solid 1px red;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .tabs {
@@ -74,6 +65,7 @@ body {
     position: absolute;
     top: 0;
     left: 500px;
+    margin-left:80px;
 }
 
 .specials {
@@ -130,3 +122,28 @@ body {
     top: 1200px;
     left: 1000px;
 }
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  position: absolute;
+  margin-top: 800px;
+  margin-left:10px;
+  border:30px solid rgb(220,220,220,.5);
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
