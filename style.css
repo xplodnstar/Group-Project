@@ -5,7 +5,7 @@ body {
     width: 1500px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 /* background image to be added later */
-    background-color: grey;
+    background-color: darkgray;
 }
 .pageTop {
     position: relative;
@@ -25,9 +25,14 @@ body {
     margin: 10px 100px;
 }
 
-.logo h2, h3 {
+
+h2, h3 {
     text-align: center;
     color: rgb(169, 45, 38)
+}
+
+h4 {
+    font-size: 18px;
 }
 
 .social {
@@ -35,22 +40,22 @@ body {
     height: 300px;
     border: solid 1px transparent;
     position: absolute;
-    top: 500px;
+    top: 400px;
     left: 0;
     margin-left:20px;
 }
 
 .innerPic {
     width: 1000px;
-    height: 650px;
+    height: 600px;
+    border: solid 1px red;
     position: absolute;
+    top: 0;
     left: 500px;
     background-image: url("assets/Tavern.jpeg");
     background-position: center; 
     background-repeat: no-repeat; 
-    background-size: cover; 
-    margin-left:20px;
-    margin-top:50px;    
+    background-size: cover;  
 }
 
 .pageBody {
@@ -58,6 +63,7 @@ body {
     top: 600px;
     left: 0;
 }
+
 
 #accordion {
     position:absolute;
@@ -101,71 +107,22 @@ ul {
         height:500px;
     }
 
-.specials {
+.slideshow-container {
     width: 500px;
-    height: 1200px;
-    border: solid 1px transparent;
+    height: 600px;
+    border: solid 1px red;
     position: absolute;
     top: 600px;
     left: 0;
-}
-
-.specials h2 {
-    text-align: center;
-    color: rgb(169, 45, 38)
-}
-
-#bratwurst {
-    width: 450px;
-    margin: 0 25px;
-}
-
-#cookies {
-    width: 450px;
-    margin: 0 25px;
-}
-
-.specials p {
-    margin: 25px;
-    font-size: 18px;
-}
-
-.specials hr {
-    width: 475px;
-    height: 5px;;
-    background-color: rgb(169, 45, 38);
-    border: none;
-    border-radius: 25%;
-}
-
-.news {
-    width: 500px;
-    height: 600px;
-    border: solid 1px transparent;
-    position: absolute;
-    top: 1200px;
-    left: 500px;
-}
-
-.map {
-    width: 500px;
-    height: 600px;
-    border: solid 1px transparent;
-    position: absolute;
-    top: 1200px;
-    left: 1000px;
-}
-
-
-.slideshow-container {
-  position: absolute;
-  margin-top: 200px;
-  border:20px solid rgb(255,255,255,.2);
-  margin-left:0px;
+  /* border:30px solid rgb(220,220,220,.5); */
 }
 
 .mySlides {
   display: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 .fade {
@@ -174,4 +131,120 @@ ul {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+.tabs {
+    width: 1000px;
+    height: 1200px;
+    border: solid 1px red;
+    position: absolute;
+    top: 600px;
+    left: 500px;
+
+}
+
+/* .select {
+    display: flex;  
+    flex-direction: row;
+}
+
+.hidden {
+    position: relative;
+    max-width: 0;
+    overflow-x: auto;
+	transition-property: all;
+	transition-duration: .5s;
+}
+
+.hidden.open {
+    max-width: 1000px;
+} */
+
+.specials {
+    width: 500px;
+    height: 1200px;
+    border: solid 1px transparent;
+    position: absolute;
+    top: 1200px;
+    left: 0;
+}
+
+
+#bratwurst {
+    width: 450px;
+    margin: 0 25px;
+    border: solid 2px  rgb(169, 45, 38);
+    box-shadow: inset 0 0 200px black;
+}
+
+#bratwurst {
+    width: 450px;
+    margin: 0 25px;
+
+}
+
+#cookies {
+    width: 450px;
+    margin: 0 25px;
+
+    border: solid 2px  rgb(169, 45, 38);
+    box-shadow: inset 0 0 200px black;
+}
+
+p {
+    margin: 25px;
+    font-size: 18px;
+}
+span {
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+  height: 5px;;
+    background-color: rgb(169, 45, 38);
+    border: none;
+    border-radius: 25%;
+}
+
+.specials p {
+    margin: 25px;
+    font-size: 18px;
+}
+
+.news {
+    width: 500px;
+    height: 600px;
+    border: solid 1px transparent;
+    position: absolute;
+    top: 1800px;
+    left: 500px;
+}
+
+.map {
+    width: 500px;
+    height: 600px;
+    border: solid 1px transparent;
+    position: absolute;
+    top: 1800px;
+    left: 1000px;
+}
+
+#map {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    border: solid 2px  rgb(169, 45, 38);
+}
+
+#mars {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    border: solid 2px  rgb(169, 45, 38);
+}
+
+
+
+
+
 
