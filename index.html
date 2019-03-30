@@ -57,17 +57,20 @@
                 <div class="mySlides fade">
                     <img src="assets/chili.jpg">
                 </div>
-                <span>All our food is printed fresh to order.</span>
+                <p class="center">All our food is printed fresh to order.</p>
             </div>
             <div class="tabs">
                 <ul id="accordion">
                     <li>
                         <h4>Our History</h4>
                         <div class="content">
-                            <p id="hist">Print of Ale was established in April of 2019. Originally conceived as a class
+                            <p class="hist">Print of Ale was established in April of 2019. Originally conceived as a
+                                class
                                 project
                                 for their coding class, founders Tissiana and Nova came together with the idea to create
-                                an outlandish and fun concept that would please the almighty graders. The concept behind
+                                an outlandish and fun concept that would please the almighty graders.</p>
+                            <img src="./assets/Kitchen.jpeg" alt="" id="kitchen">
+                            <p class="hist">The concept behind
                                 the tavern is to 3D print all of our food to make it as fresh as possible, but also to
                                 be located on Mars, just to differentiate us from all others. Tissi and Nova worked
                                 tirelessly to complete the website that would be considered the best in the class. Well,
@@ -113,8 +116,20 @@
 
                     <li>
                         <h4>Reservations</h4>
-                        <div class="content">
-                            <p>bjbjbjbj</p>
+                        <div class="content center">
+                            <form action="post" target="_blank">
+                                <input type="text" name="name" id="name" placeholder="Your Name">
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                                <input type="num" name="pSize" id="pSize" placeholder="Party size">
+                                <br>
+                                <input type="date" name="date" id="date">
+                                <input type="time" name="time" id="time">
+                                <br>
+                                <textarea name="addlInfo" id="addlInfo" cols="30" rows="10"
+                                    placeholder="Any additional information"></textarea>
+                                <br>
+                                <button>Send Request</button>
+                            </form>
                         </div>
                     </li>
 
