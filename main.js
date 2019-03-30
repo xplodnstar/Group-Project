@@ -42,14 +42,74 @@ $("#accordion").on("click", "h4", function () {
     }
 })
 
+$("#accordion").on("click", "#menu", function () {
 
-
-$("#menu").on("click", function () {
-    $(".content").removeClass("show")
+    $(".content1").addClass("show")
     var items = $.ajax({
-        method: "post",
+        method: "get",
         url: "https://obscure-tundra-54269.herokuapp.com/bar-food"
-    }).done(function (items) {
-        console.log(items)
+    }).done(function (data) {
+        console.log(data)
+        var htmlStr = data.appetizers.map(function (item) {
+            return `
+                <p class="name">${item.name}</p>
+                <p class="price">$${item.price}</p>
+                <p class="desc">${item.description}</p>
+                <p class="spicy">${item.extra.spicy}</p>
+                <p class="glut">${item.extra.glutenfree}</p>
+                <p class="veg">${item.extra.vegetarian}</p>
+            `
+        }).join('')
+        $("#menu-container .content1").html(htmlStr)
     })
 })
+
+$("#accordion").on("click", "#menu", function () {
+
+    $(".content2").addClass("show")
+    var items = $.ajax({
+        method: "get",
+        url: "https://obscure-tundra-54269.herokuapp.com/bar-food"
+    }).done(function (data) {
+        console.log(data)
+        var htmlStr = data.entrees.map(function (item) {
+            return `
+                <p class="name">${item.name}</p>
+                <p class="price">$${item.price}</p>
+                <p class="desc">${item.description}</p>
+                <p class="spicy">${item.extra.spicy}</p>
+                <p class="glut">${item.extra.glutenfree}</p>
+                <p class="veg">${item.extra.vegetarian}</p>
+            `
+        }).join('')
+        $("#menu-container .content2").html(htmlStr)
+    })
+})
+
+$("#accordion").on("click", "#menu", function () {
+
+    $(".content3").addClass("show")
+    var items = $.ajax({
+        method: "get",
+        url: "https://obscure-tundra-54269.herokuapp.com/bar-food"
+    }).done(function (data) {
+        console.log(data)
+        var htmlStr = data.desserts.map(function (item) {
+            return `
+                <p class="name">${item.name}</p>
+                <p class="price">$${item.price}</p>
+                <p class="desc">${item.description}</p>
+                <p class="spicy">${item.extra.spicy}</p>
+                <p class="glut">${item.extra.glutenfree}</p>
+                <p class="veg">${item.extra.vegetarian}</p>
+            `
+        }).join('')
+        $("#menu-container .content3").html(htmlStr)
+    })
+})
+
+
+
+
+
+
