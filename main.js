@@ -55,9 +55,6 @@ $("#accordion").on("click", "#menu", function () {
                 <p class="name">${item.name}</p>
                 <p class="price">$${item.price}</p>
                 <p class="desc">${item.description}</p>
-                <p class="spicy">${item.extra.spicy}</p>
-                <p class="glut">${item.extra.glutenfree}</p>
-                <p class="veg">${item.extra.vegetarian}</p>
             `
         }).join('')
         $("#menu-container .content1").html(htmlStr)
@@ -77,9 +74,6 @@ $("#accordion").on("click", "#menu", function () {
                 <p class="name">${item.name}</p>
                 <p class="price">$${item.price}</p>
                 <p class="desc">${item.description}</p>
-                <p class="spicy">${item.extra.spicy}</p>
-                <p class="glut">${item.extra.glutenfree}</p>
-                <p class="veg">${item.extra.vegetarian}</p>
             `
         }).join('')
         $("#menu-container .content2").html(htmlStr)
@@ -99,9 +93,6 @@ $("#accordion").on("click", "#menu", function () {
                 <p class="name">${item.name}</p>
                 <p class="price">$${item.price}</p>
                 <p class="desc">${item.description}</p>
-                <p class="spicy">${item.extra.spicy}</p>
-                <p class="glut">${item.extra.glutenfree}</p>
-                <p class="veg">${item.extra.vegetarian}</p>
             `
         }).join('')
         $("#menu-container .content3").html(htmlStr)

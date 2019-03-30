@@ -105,7 +105,13 @@ ul {
         color: rgb(0,0,0,.3)
     }
 
+    #menu-container .name {
+        font-size:30px;
+    }
 
+    #menu-container .price {
+        font-size:20px;
+    }
 
     #hist {
         font-size:30px;
