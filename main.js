@@ -105,6 +105,30 @@ $("#accordion").on("click", "#menu", function () {
 $("#accordion").on("click", "#menu", function () {
 
   $(".content3").addClass("show")
+
+  var items = $.ajax({
+    method: "get",
+    url: "https://obscure-tundra-54269.herokuapp.com/bar-food"
+  }).done(function (data) {
+    console.log(data)
+    
+    var htmlStr = data.desserts.map(function (item) {
+      
+      return `
+                <p class="name">${item.name}</p>
+                <p class="price">$${item.price}</p>
+                <p class="desc">${item.description}</p>
+            `
+    }).join('')
+
+    $("#menu-container .content3").html(htmlStr)
+
+  })
+})
+
+$("#accordion").on("click", "#menu", function () {
+
+  $(".content3").addClass("show")
   var items = $.ajax({
     method: "get",
     url: "https://obscure-tundra-54269.herokuapp.com/bar-food"
